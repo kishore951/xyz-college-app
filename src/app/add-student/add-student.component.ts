@@ -23,17 +23,17 @@ export class AddStudentComponent implements OnInit {
   
   readValues=()=>{
     let data ={
-  Name:this.Name,
-  RollNo:this.RollNo,
-  AdmissionNo:this.AdmissionNo,
-  college:this.college,
-  department:this.department,
-  BloodGroup:this.BloodGroup,
-  DOB:this.DOB,
-  ParentName:this.ParentName,
-  ParentEmailId:this.ParentEmailId,
-  GuardianName:this.GuardianName,
-  GuardianAddress:this.GuardianAddress
+  "Name":this.Name,
+  "RollNo":this.RollNo,
+  "AdmissionNo":this.AdmissionNo,
+  "college":this.college,
+  "department":this.department,
+  "BloodGroup":this.BloodGroup,
+  "DOB":this.DOB,
+  "ParentName":this.ParentName,
+  "ParentEmailId":this.ParentEmailId,
+  "GuardianName":this.GuardianName,
+  "GuardianAddress":this.GuardianAddress
 
     }
     console.log(data)

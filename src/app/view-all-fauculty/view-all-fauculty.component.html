@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Phone No</th>
+                    <th scope="col">Department</th>
+                    <th scope="col">Date of Joining</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of fetchData">
+                    <th scope="row">1</th>
+                    <td>{{i.name}}</td>
+                    <td>{{i.phno}}</td>
+                    <td>{{i.dept}}</td>
+                    <td>{{i.doj}}</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
