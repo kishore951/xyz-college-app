@@ -10,8 +10,8 @@ export class AdminLoginComponent implements OnInit {
 
   constructor( private myrouter:Router) { }
 
-  "username"=""
-  "password"=""
+  username=""
+  password=""
 
   status:boolean=false
 
