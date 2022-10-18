@@ -9,17 +9,17 @@ export class AddStudentComponent implements OnInit {
 
   constructor() { }
 
-  "Name"=""
-  "RollNo"=""
-  "AdmissionNo"=""
-  "college"=""
-  "department"=""
-  "BloodGroup"=""
-  "DOB"=""
-  "ParentName"=""
-  "ParentEmailId"=""
-  "GuardianName"=""
-  "GuardianAddress"=""
+  Name=""
+  RollNo=""
+  AdmissionNo=""
+  college=""
+  department=""
+  BloodGroup=""
+  DOB=""
+  ParentName=""
+  ParentEmailId=""
+  GuardianName=""
+  GuardianAddress=""
   
   readValues=()=>{
     let data ={
