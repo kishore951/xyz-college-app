@@ -5,18 +5,33 @@
             <table class="table">
                 <thead>
                   <tr>
+                    <th scope="col">Id</th>
                     <th scope="col">Name</th>
                     <th scope="col">Roll No</th>
+                    <th scope="col">Admission No</th>
+                    <th scope="col">College</th>
                     <th scope="col">Department</th>
-                    <th scope="col">DOB</th>
+                    <th scope="col">Blood Group</th>
+                    <th scope="col">Dob</th>
+                    <th scope="col">Parent Name</th>
+                    <th scope="col">Parent Email Id</th>
+                    <th scope="col">Guardian Address</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr *ngFor="let i of fetchData">
+                  <tr *ngFor="let i of viewStudent">
+                    <td>{{i.id}}</td>
                     <td>{{i.name}}</td>
                     <td>{{i.rollNo}}</td>
-                    <td>{{i.Department}}</td>
-                    <td>{{i.dob}}</td>
+                    <td>{{i.admissionNo}}</td>
+                    <td>{{i.college}}</td>
+                    <td>{{i.department}}</td>
+                    <td>{{i.bloodGroup}}</td>
+                    <td>{{i.dOB}}</td>
+                    <td>{{i.parentName}}</td>
+                    <td>{{i.parentEmailId}}</td>
+                    <td>{{i.guardianAddress}}</td>
+                    <td><button class="btn btn-danger"(click)=" deleteStudent(i.id)">Delete</button></td>
                   </tr>
                   
                 </tbody>

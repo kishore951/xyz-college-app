@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-add-student',
@@ -7,36 +8,56 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddStudentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myapi:ApiService) { }
 
-  Name=""
-  RollNo=""
-  AdmissionNo=""
+  
+  name=""
+  rollNo=""
+  admissionNo=""
   college=""
   department=""
-  BloodGroup=""
-  DOB=""
-  ParentName=""
-  ParentEmailId=""
-  GuardianName=""
-  GuardianAddress=""
+  bloodGroup=""
+  dOB=""
+  parentName=""
+  parentEmailId=""
+  guardianAddress=""
   
   readValues=()=>{
     let data ={
-  "Name":this.Name,
-  "RollNo":this.RollNo,
-  "AdmissionNo":this.AdmissionNo,
+      
+  "name":this.name,
+  "rollNo":this.rollNo,
+  "admissionNo":this.admissionNo,
   "college":this.college,
   "department":this.department,
-  "BloodGroup":this.BloodGroup,
-  "DOB":this.DOB,
-  "ParentName":this.ParentName,
-  "ParentEmailId":this.ParentEmailId,
-  "GuardianName":this.GuardianName,
-  "GuardianAddress":this.GuardianAddress
+  "bloodGroup":this.bloodGroup,
+  "dob":this.dOB,
+  "parentName":this.parentName,
+  "parentEmailId":this.parentEmailId,
+  "guardianAddress":this.guardianAddress
 
     }
     console.log(data)
+    this.myapi.addStudent(data).subscribe(
+      (data)=>{
+        alert("successfully added")
+      }
+    )
+    
+
+    
+
+    this.name
+  this.rollNo
+  this.admissionNo=""
+  this.college=""
+  this.department=""
+  this.bloodGroup=""
+  this.dOB=""
+  this.parentName=""
+  this.parentEmailId=""
+  this.guardianAddress=""
+
   }
 
   ngOnInit(): void {
