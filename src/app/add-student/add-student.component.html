@@ -5,15 +5,15 @@
             <div class="row">
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control" name="Name" [(ngModel)]="Name">
+                    <input type="text" class="form-control" name=" name" [(ngModel)]=" name">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                     <label for="" class="form-label">Roll No</label>
-                    <input type="text" class="form-control" name="RollNo" [(ngModel)]="RollNo">
+                    <input type="text" class="form-control" name="rollNo" [(ngModel)]="rollNo">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                     <label for="" class="form-label">Admission No</label>
-                    <input type="text" class="form-control" name="AdmissionNo" [(ngModel)]="AdmissionNo">
+                    <input type="text" class="form-control" name="admissionNo" [(ngModel)]="admissionNo">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                     <label for="" class="form-label">College</label>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                     <label for="" class="form-label">Blood Group</label>
-                    <Select name="BloodGroup" id="" class="form-control"  [(ngModel)]="BloodGroup">
+                    <Select name="bloodGroup" id="" class="form-control"  [(ngModel)]="bloodGroup">
                         <option value="A+">A+</option>
                         <option value="B+">B+</option>
                         <option value="O+">O+</option>
@@ -44,23 +44,19 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                     <label for="" class="form-label">DOB</label>
-                    <input type="text" class="form-control" name="DOB" [(ngModel)]="DOB">
+                    <input type="date" name="dOB" id="" class="form-control" [(ngModel)]="dOB">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                     <label for="" class="form-label">Parent Name</label>
-                    <input type="text" class="form-control" name="ParentName" [(ngModel)]="ParentName">
+                    <input type="text" class="form-control" name="parentName" [(ngModel)]="parentName">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                     <label for="" class="form-label">parent's email id</label>
-                    <input type="email" name="ParentEmailId" id="" class="form-control" [(ngModel)]="ParentEmailId">
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                    <label for="" class="form-label">Guardian Name</label>
-                    <input type="text" class="form-control" name="GuardianName" [(ngModel)]="GuardianName">
+                    <input type="email" name="parentEmailId" id="" class="form-control" [(ngModel)]="parentEmailId">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Guardian Address</label>
-                    <textarea name="GuardianAddress" id="" cols="30" rows="10" class="form-control" [(ngModel)]="GuardianAddress"></textarea>
+                    <textarea name="guardianAddress" id="" cols="30" rows="10" class="form-control" [(ngModel)]="guardianAddress"></textarea>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <button class="btn btn-primary" (click)="readValues()">Submit</button>
